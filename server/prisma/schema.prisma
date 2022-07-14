@@ -12,7 +12,7 @@ datasource db {
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
-  firsName  String?
+  firstName  String?
   lastName String?
   img   String  @unique
   role  Role    @default(User)
