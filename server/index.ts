@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // get 
-app.get("/user", async (req, res) => {
+app.get("/users", async (req, res) => {
     try {
       const user = await prisma.user.findMany()
   
@@ -34,8 +34,7 @@ app.get("/user", async (req, res) => {
       const user= await prisma.user.create({
         data: {
             email: req.body.email,
-            firstName:req.body.firstName,
-            lastName:req.body.lastName,
+            userName:req.body.email,
             img: req.body.img,
         },
       })

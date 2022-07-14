@@ -12,8 +12,7 @@ datasource db {
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
-  firstName  String?
-  lastName String?
+userName String ?
   img   String  @unique
   role  Role    @default(User)
  
