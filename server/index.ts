@@ -1,6 +1,7 @@
 import "dotenv/config";
 import express, {Request, Response}from "express";
 import {PrismaClient} from "@prisma/client"
+import cors from 'cors';
 const Port= 3000
 
 const app = express()
@@ -9,6 +10,7 @@ const app = express()
 const prisma = new PrismaClient();
 
 app.use(express.json());
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 
 
