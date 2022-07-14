@@ -1,26 +1,20 @@
 <template>
   <div class="home">
-    <ul>
-      <li v-list-sheets :key="index"  v-for="(sheet ,index) in sheets">
-        {{sheet.name}}
-      </li>
-    </ul>
-
+ <ul>
+    <li v-for="(sheet, index) in sheets"  v-bind:key="index">
+      {{sheet}} ({{index}})</li>
+  </ul>
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  data():any{
-    return {
-      sheets:[]
-    }
-  },
-  mounted(){
-    fetch('http://localhost:3000/sheet/').then(response => response.json()).then(result => {
-      console.log(result)
-      // to work on 
-    })
+import { Vue } from 'vue-class-component'
+import { sheetApi } from "../api/getsheet";
+import Sheets from "../interface/sheet";
+export default class Sheet extends Vue {
+  sheets: Sheets[] = [];
+  async mounted(): Promise<void> {
+   this.sheets = await sheetApi.findMany();
   }
 }
 </script>
