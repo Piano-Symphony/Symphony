@@ -12,8 +12,7 @@ datasource db {
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
-  firsName  String?
-  lastName String?
+userName String ?
   img   String  @unique
   role  Role    @default(User)
  
@@ -35,7 +34,7 @@ model Comment {
   sheet Sheet? @relation(fields: [sheetId], references: [id]) 
   sheetId Int?
 }
-
+//
 enum Role {
   User
 }
