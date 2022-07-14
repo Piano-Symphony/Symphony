@@ -1,26 +1,27 @@
 <template>
   <div class="home">
-    <ul>
-      <li v-list-sheets :key="index"  v-for="(sheet ,index) in sheets">
-        {{sheet.name}}
-      </li>
-    </ul>
+    <v-list>
+      <v-list-item: key="index" v-for="(sheet, index) in sheets">
+      <div>
+        <br>
+        <h1>{{ sheet.name }}</h1>
+      </div>
+      </v-list-item:>
+    </v-list>>
+      
 
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  data():any{
-    return {
-      sheets:[]
-    }
-  },
-  mounted(){
-    fetch('http://localhost:3000/sheet/').then(response => response.json()).then(result => {
-      console.log(result)
-      // to work on 
-    })
+
+import { Component, Vue } from "vue-property-decorator";
+import { sheetApi } from "@/api/getsheet";
+import Sheets from "@/interface/sheet"
+export default class Sheet extends Vue {
+  sheets: Sheets[] = [];
+  async mounted(): Promise<void> {
+   this.sheets = await sheetApi.getAllsheets();
   }
 }
 </script>
