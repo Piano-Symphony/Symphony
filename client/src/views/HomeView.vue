@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <ul>
+      <li v-list-sheets :key="index"  v-for="(sheet ,index) in sheets">
+        {{sheet.name}}
+      </li>
+    </ul>
+
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
-
-@Options({
-  components: {
-    HelloWorld,
+export default {
+  data():any{
+    return {
+      sheets:[]
+    }
   },
-})
-export default class HomeView extends Vue {}
+  mounted(){
+    fetch('http://localhost:3000/sheet/').then(response => response.json()).then(result => {
+      console.log(result)
+      // to work on 
+    })
+  }
+}
 </script>
