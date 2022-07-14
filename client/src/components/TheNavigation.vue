@@ -8,9 +8,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/begginer">Begginer</router-link>
-            <router-link class="nav-link" to="/intermediaire">Intermediaire</router-link>
-            <router-link class="nav-link" to="/master">Master</router-link>
+            <router-link class="nav-link" to="/sheet/beginner">Beginner</router-link>
+            <router-link class="nav-link" to="/sheet/intermediate">Intermediate</router-link>
+            <router-link class="nav-link" to="/sheet/master">Master</router-link>
       </div>
       <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
@@ -29,5 +29,12 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data () {
+    return {
+      sheet:[]
+    }
+  }
+
+}
 </script>

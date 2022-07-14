@@ -2,8 +2,8 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SignIn from '../views/SignIn.vue'
 import LogIn from '../views/LogIn.vue'
-import Begginer from '../views/BeggiNer.vue'
-import Intermediaire from '../views/IntermeDiaire.vue'
+import Beginner from '../views/BeginNer.vue'
+import Intermediate from '../views/IntermeDiate.vue'
 import Master from '../views/MastEr.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -31,17 +31,17 @@ const routes: Array<RouteRecordRaw> = [
     component: LogIn
   },
   {
-    path: '/begginer',
-    name: 'begginer',
-    component: Begginer
+    path: '/sheet/beginner',
+    name: 'beginner',
+    component: Beginner
   },
   {
-    path: '/intermediaire',
-    name: 'intermediaire',
-    component: Intermediaire
+    path: '/sheet/intermediate',
+    name: 'intermediate',
+    component: Intermediate
   },
   {
-    path: '/master',
+    path: '/sheet/master',
     name: 'master',
     component: Master
   }
