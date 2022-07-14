@@ -1,4 +1,4 @@
-export interface Sheet {
+export default interface Sheet {
     id  : number,
     img : string, 
     name : string,
