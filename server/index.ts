@@ -1,5 +1,5 @@
 import "dotenv/config";
-import express from "express";
+import express, {Request, Response}from "express";
 import {PrismaClient} from "@prisma/client"
 const Port= 3000
 
@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 
 
 // get 
-app.get("/users", async (req, res) => {
+app.get("/users", async (req:Request, res:Response) => {
     try {
       const user = await prisma.user.findMany()
   
@@ -25,7 +25,7 @@ app.get("/users", async (req, res) => {
     }
   })
 
-  app.post("/users", async (req, res) => {
+  app.post("/users", async (req:Request, res:Response) => {
     try {  
       const user= await prisma.user.create({
         data: {
@@ -44,12 +44,62 @@ app.get("/users", async (req, res) => {
     }
   })
 
-app.get("/sheet",async (req,res,next)=>{
+app.get("/sheet",async (req:Request, res:Response)=>{
   try {
     const sheet =  await prisma.sheet.findMany()
     res.json(sheet)
   } catch(error:any){
-    next(error.message)
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/beginner",async (req:Request,res:Response)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Beginner"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/intermediate",async (req:Request,res:Response)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Intermediate"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/master",async (req:Request,res:Response,)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Master"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
   }
 })
 
@@ -61,5 +111,5 @@ app.get("/sheet",async (req,res,next)=>{
 
 
 app.listen(3000, () => {
-    console.log("App listening on port 3000 littel pajaro");
+    console.log("App listening on port 3000 little pajaro");
   });
