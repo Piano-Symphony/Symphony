@@ -16,7 +16,8 @@
             <input type="password" class="form-control" />
         </div>
         <div class ="my-3">
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary"
+            @click="navigateTo({name:'home'})">Login</button>
         </div>
     </form>
 </div>
@@ -25,6 +26,12 @@
 
 </template>
 <script>
-export default {}
+export default {
+    methods: {
+        navigateTo (route) {
+            this.$router.push(route)
+        }
+    }
+}
 
 </script>
