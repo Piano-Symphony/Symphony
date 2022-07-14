@@ -26,11 +26,7 @@ app.get("/users", async (req, res) => {
   })
 
   app.post("/users", async (req, res) => {
-    try {
-      
-  
-      // games is an array of string | string[]
-  
+    try {  
       const user= await prisma.user.create({
         data: {
             email: req.body.email,
@@ -38,7 +34,7 @@ app.get("/users", async (req, res) => {
             img: req.body.img,
         },
       })
-  
+      
       res.json(user)
     } catch (error: any) {
       console.log(error.message)
@@ -47,6 +43,15 @@ app.get("/users", async (req, res) => {
       })
     }
   })
+
+app.get("/sheet",async (req,res,next)=>{
+  try {
+    const sheet =  await prisma.sheet.findMany()
+    res.json(sheet)
+  } catch(error:any){
+    next(error.message)
+  }
+})
 
 
 
