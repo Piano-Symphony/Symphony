@@ -53,6 +53,48 @@ app.get("/sheet",async (req,res,next)=>{
   }
 })
 
+app.get("/sheet/beginner",async (req,res,next)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Beginner"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    next(error.message)
+  }
+})
+
+app.get("/sheet/intermediate",async (req,res,next)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Intermediate"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    next(error.message)
+  }
+})
+
+app.get("/sheet/master",async (req,res,next)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Master"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    next(error.message)
+  }
+})
+
 
 
 
@@ -61,5 +103,5 @@ app.get("/sheet",async (req,res,next)=>{
 
 
 app.listen(3000, () => {
-    console.log("App listening on port 3000 littel pajaro");
+    console.log("App listening on port 3000 little pajaro");
   });
