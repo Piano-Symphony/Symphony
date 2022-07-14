@@ -15,9 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 // get 
 app.get("/get", async (req, res, next) => {
     try {
-      const posts = await prisma.post.findMany({
+      const posts = await prisma.user.findMany({
         where: {
-          email: true,
+          email: '',
         },
        
       });
@@ -27,6 +27,15 @@ app.get("/get", async (req, res, next) => {
       next(error.message);
     }
   });
+
+app.get("/sheet",async (req,res,next)=>{
+  try {
+    const sheet =  await prisma.sheet.findMany()
+    res.json(sheet)
+  } catch(error:any){
+    next(error.message)
+  }
+})
 
 
 
