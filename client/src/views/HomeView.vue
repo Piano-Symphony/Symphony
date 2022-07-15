@@ -2,7 +2,10 @@
   <div class="home">
  <ul>
     <li v-for="sheet in sheets"  v-bind:key="sheet.id">
-      {{sheet.name}} <img :src=sheet.img /> </li>
+      <div className="all-post">
+      {{sheet.name}} <img :src=sheet.img /> 
+      </div>
+      </li>
   </ul>
   </div>
 </template>
