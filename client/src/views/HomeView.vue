@@ -16,7 +16,7 @@
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
             <button class="btn btn-outline-danger" style='margin-right:140px'>Like</button>
-            <button class="btn btn-primary" >Download</button>
+            <button class="btn btn-primary">Download</button>
        </div>
        </div>
 

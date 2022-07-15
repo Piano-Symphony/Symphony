@@ -6,6 +6,9 @@ import Beginner from '../views/BeginNer.vue'
 import Intermediate from '../views/IntermeDiate.vue'
 import Master from '../views/MastEr.vue'
 import About from '../views/AboutView.vue'
+import VideoBeginner from '../views/VideoBeginner.vue'
+import VideoIntermediate from '../views/VideoIntermediate.vue'
+import VideoMaster from '../views/VideoMaster.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -45,6 +48,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/sheet/master',
     name: 'master',
     component: Master
+  },
+  {
+    path: '/videobeginner',
+    name: 'videobeginner',
+    component: VideoBeginner
+  },
+  {
+    path: '/videointermediate',
+    name: 'videointermediate',
+    component: VideoIntermediate
+  },
+  {
+    path: '/videomaster',
+    name: 'videomaster',
+    component: VideoMaster
   }
 ]
 

@@ -5,9 +5,7 @@
     <div class="col-md-12">
       <div>
    <router-view></router-view>
-
 </div>
-
     </div>
   </div>
 </div>
@@ -23,7 +21,6 @@ export default {
     TheNavigation
   },
 }
-
 </script>
 <style>
 </style>

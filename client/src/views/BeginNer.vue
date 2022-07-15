@@ -11,11 +11,13 @@
         <div class="embed-responsive embed-responsive-16by9">
           <img 
           class="card-img-top embed-responsive-item"
-          :src=sheet.img />
+          :src=sheet.img 
+          />
         </div>
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
-            <router-link to=""><button class="btn btn-danger" style='margin-right:140px'>Like</button></router-link>
+            <router-link to=""><button class="btn btn-danger" style='margin-right:30px'>Like</button></router-link>
+            <router-link to="/videobeginner"><button class="btn btn-danger" style='margin-right:30px'>Watch</button></router-link>
             <router-link to=""><button class="btn btn-primary">Download</button></router-link>
        </div>
        </div>
