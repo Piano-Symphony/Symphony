@@ -26,6 +26,7 @@ model Sheet {
   fav Boolean?
   comments Comment[]
   level String?  
+  pdf String? 
 }
 
 model Comment {
