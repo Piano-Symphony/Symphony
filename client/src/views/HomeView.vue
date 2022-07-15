@@ -1,8 +1,8 @@
 <template>
   <div class="home">
  <ul>
-    <li v-for="(sheet, index) in sheets"  v-bind:key="index">
-      {{sheet.name}} <img src={{sheet.img}} /> </li>
+    <li v-for="sheet in sheets"  v-bind:key="sheet.id">
+      {{sheet.name}} <img :src=sheet.img /> </li>
   </ul>
   </div>
 </template>
