@@ -25,7 +25,7 @@
 </div>
 
 </template>
-<script lang="ts">
+<script>
 export default {
     data () {
     return {
@@ -34,9 +34,9 @@ export default {
     }
     },
     methods: {
-        navigateTo (route) {
+         navigateTo (route) {
             this.$router.push(route)
-        }
+         }
     }
 }
 
