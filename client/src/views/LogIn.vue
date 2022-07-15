@@ -34,9 +34,9 @@ export default {
     }
     },
     methods: {
-        navigateTo (route) {
+         navigateTo (route) {
             this.$router.push(route)
-        }
+         }
     }
 }
 

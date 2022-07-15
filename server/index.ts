@@ -2,7 +2,8 @@ import "dotenv/config";
 import express, {Request, Response}from "express";
 import {PrismaClient} from "@prisma/client"
 import cors from 'cors';
-const Port= 3000
+
+const Port = 3000
 
 const app = express()
 
