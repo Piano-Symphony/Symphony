@@ -1,11 +1,26 @@
 <template>
-  <div class="home">
- <ul>
-    <li v-for="sheet in sheets"  v-bind:key="sheet.id">
-      <h3>{{sheet.name}}</h3>
-      <img :src=sheet.img />
-      </li>
-  </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h4> Master Level </h4>
+      </div>
+    </div>  
+    <div class="row">
+      <div v-for="sheet in sheets"  v-bind:key="sheet.id" class="col-md-6 col-xl-4 col-12 pt-3 d-flex">
+       <div class="card h-100 w-100">
+        <div class="embed-responsive embed-responsive-16by9">
+          <img 
+          class="card-img-top embed-responsive-item"
+          :src=sheet.img />
+        </div>
+       <div class="card-body">
+        <h5 class="card-title">{{sheet.name}}</h5>
+            <router-link to=""><button class="btn btn-danger" style='margin-right:140px'>Like</button></router-link>
+            <router-link to=""><button class="btn btn-primary">Download</button></router-link>
+       </div>
+       </div>
+      </div>
+    </div> 
   </div>
 </template>
 
