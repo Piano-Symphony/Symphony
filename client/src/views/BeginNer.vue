@@ -16,9 +16,9 @@
         </div>
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
-            <router-link to=""><button class="btn btn-danger" style='margin-right:30px'>Like</button></router-link>
-            <router-link to="/videobeginner"><button class="btn btn-danger" style='margin-right:30px'>Watch</button></router-link>
-            <router-link to=""><button class="btn btn-primary">Download</button></router-link>
+            <button class="btn btn-danger" style='margin-right:30px'>Like</button>
+             <router-link to="/videobeginner"><button class="btn btn-danger" style='margin-right:30px'>Watch</button></router-link>
+            <button class="btn btn-primary"  v-on:click="download(sheet.pdf)">Download</button>
        </div>
        </div>
        
@@ -42,6 +42,9 @@ export default class Sheet extends Vue {
   sheets: Sheets[] = [];
   async mounted(): Promise<void> {
    this.sheets = await sheetApi.findMany();
+  }
+  download(link:any){
+    window.open(link)
   }
 }
 </script>
