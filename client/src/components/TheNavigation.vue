@@ -12,7 +12,7 @@
             <router-link class="nav-link" to="/sheet/intermediate">Intermediate</router-link>
             <router-link class="nav-link" to="/sheet/master">Master</router-link>
       </div>
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

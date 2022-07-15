@@ -5,8 +5,8 @@ export default interface Sheet {
     videoURL :string
     fav :string,
     comments : string,
-    level :string
+    level :string,
+    pdf:string
 }
-
 
 

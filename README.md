@@ -38,3 +38,8 @@ Install the dependencies in client folder and server folder:
 First we used the Vue.js on the front-end so the first step is to install the vue.js packages :
 - npm install -g vue-cli
 - vue create client
+
+# Server :
+- npm start
+- npx prisma studio
+- npx prisma db push 
