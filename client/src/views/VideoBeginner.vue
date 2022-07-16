@@ -12,8 +12,8 @@
           <iframe width="560" height="315" :src=sheet.videoURL title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
-            <router-link to=""><button class="btn btn-primary" style='margin-right:140px'>Done</button></router-link>
-            <router-link to=""><button class="btn btn-danger">Not Done</button></router-link>
+            <router-link to=""><button class="btn btn-success" style='margin-right:140px'>Done</button></router-link>
+            <router-link to=""><button class="btn btn-outline-danger">Not Done</button></router-link>
        </div>
        </div>
       </div>

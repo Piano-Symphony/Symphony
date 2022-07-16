@@ -15,8 +15,8 @@
         </div>
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
-           <button class="btn btn-danger" style='margin-right:300px'>Like</button>
-         <router-link to="/videointermediate"><button class="btn btn-danger" style='margin-right:30px'>Watch</button></router-link>
+           <button class="btn btn-outline-danger" style='margin-right:30px'>Like</button>
+         <router-link to="/videointermediate"><button class="btn btn-success" style='margin-right:30px'>Watch</button></router-link>
            <button class="btn btn-primary" v-on:click="download(sheet.pdf)">Download</button>
 
        </div>
