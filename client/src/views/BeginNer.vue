@@ -17,7 +17,7 @@
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
             <button class="btn btn-outline-danger" style='margin-right:30px'>Like</button>
-             <router-link :to="{name: 'videobeginner', params: {id: sheet.id}}"><button class="btn btn-success" style='margin-right:30px'>Watch</button></router-link>
+            <button class="btn btn-success" style='margin-right:30px' v-on:click="download(sheet.videoURL)">Watch</button>
             <button class="btn btn-primary"  v-on:click="download(sheet.pdf)">Download</button>
        </div>
        </div>
@@ -50,8 +50,8 @@ export default class Sheet extends Vue {
     window.open(link)
   }
   videos: Sheets[] = [];
-  async method(): Promise<void> {
-  this.videos = await videoApi.findUnique();
+  async method(id:any): Promise<void> {
+  this.videos = await videoApi.findUnique(id);
   }
 }
 </script>

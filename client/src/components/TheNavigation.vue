@@ -1,16 +1,15 @@
 <template>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <router-link class="nav-link" to="/about">Symphony</router-link>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <router-link class="nav-link" to="/about">
+            <img src="https://cdn.iconscout.com/icon/free/png-64/symfony-3772408-3151536.png">
+    </router-link>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <router-link class="nav-link" to="/">Home</router-link>
-            <router-link class="nav-link" to="/sheet/beginner">Beginner</router-link>
-            <router-link class="nav-link" to="/sheet/intermediate">Intermediate</router-link>
-            <router-link class="nav-link" to="/sheet/master">Master</router-link>
+        <router-link class="nav-link" to="/"><i class="fa fa-fw fa-home"></i> Home</router-link>
+            <router-link class="nav-link" to="/sheet/beginner"><i class="fa fa-folder"></i> Beginner</router-link>
+            <router-link class="nav-link" to="/sheet/intermediate"><i class="fa fa-folder"></i> Intermediate</router-link>
+            <router-link class="nav-link" to="/sheet/master"><i class="fa fa-folder"></i> Master</router-link>
       </div>
       <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
@@ -18,23 +17,21 @@
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
+
   </div>
 </nav>
     </div>
-            <router-link class="nav-link" to="/signin">SignUp</router-link>
-            <router-link class="nav-link" to="/login">Login</router-link>
+
+            <router-link class="nav-link" to="/signin"><i class="fa fa-hdd-o" style="font-size:24px"></i>  SignUp</router-link>
+            <router-link class="nav-link" to="/login"><i class="fa fa-fw fa-user"></i> Login</router-link>
   </div>
 </nav>
 </template>
 
 <script>
 
-export default {
-  data () {
-    return {
-      sheet:[]
-    }
-  }
-
-}
+export default {}
 </script>
+
+<style scoped>
+</style>

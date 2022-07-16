@@ -34,8 +34,8 @@ export default class Sheet extends Vue {
    this.sheets = await sheetApi.findMany();
   }
     videos: Sheets[] = [];
-  async method(): Promise<void> {
-    this.videos = await videoApi.findUnique();
+  async method(id:any): Promise<void> {
+    this.videos = await videoApi.findUnique(id);
   }
 }
 </script>

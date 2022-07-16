@@ -15,7 +15,8 @@
         </div>
        <div class="card-body">
         <h5 class="card-title">{{sheet.name}}</h5>
-            <button class="btn btn-outline-danger" style='margin-right:140px'>Like</button>
+            <button class="btn btn-outline-danger" style='margin-right:30px'>Like</button>
+            <button class="btn btn-success" style='margin-right:30px' v-on:click="download(sheet.videoURL)">Watch</button>
             <button class="btn btn-primary" v-on:click="download(sheet.pdf)" >Download</button>
        </div>
        </div>
@@ -28,6 +29,7 @@
 import { Vue } from 'vue-class-component'
 import { sheetApi } from "../api/getsheet";
 import Sheets from "../interface/sheet";
+
 export default class Sheet extends Vue {
   sheets: Sheets[] = [];
   async mounted(): Promise<void> {
