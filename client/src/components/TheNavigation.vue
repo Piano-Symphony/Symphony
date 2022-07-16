@@ -20,11 +20,9 @@
     </form>
   </div>
 </nav>
-
     </div>
             <router-link class="nav-link" to="/signin">SignUp</router-link>
             <router-link class="nav-link" to="/login">Login</router-link>
-
   </div>
 </nav>
 </template>

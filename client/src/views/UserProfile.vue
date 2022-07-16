@@ -4,10 +4,10 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 text-center text-md-start fw-bold">
-            <p class="mb-2 mb-md-0 fw-bold">Therichpost.com</p>
+            <p class="mb-2 mb-md-0 fw-bold">Symphony Profile</p>
           </div>
           <div class="col-md-6 text-center text-md-end text-gray-400">
-            <p class="mb-0">Jassa</p>
+            <p class="mb-0">Fawez</p>
           </div>
         </div>
       </div>
@@ -30,77 +30,14 @@
               <div class="card-body text-center">
                 <img
                   class="card-profile-img"
-                  src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                  src="https://avatars.githubusercontent.com/u/102802976?v=4"
                   alt="Jassa Rich"
                 />
-                <h3 class="mb-3">Jassa Rich</h3>
-                <p class="mb-4">Full Stack Developer</p>
+                <h3 class="mb-3">Fawez Ferjaoui</h3>
+                <p class="mb-4">Full Stack Web Developer</p>
                 <button class="btn btn-outline-dark btn-sm">
                   <span class="fab fa-twitter"></span> Follow
                 </button>
-              </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-body">
-                <div class="d-flex align-items-center">
-                  <div class="flex-shrink-0">
-                    <img
-                      class="avatar avatar-lg p-1"
-                      src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
-                      alt="Jassa Rich"
-                    />
-                  </div>
-                  <div class="flex-grow-1 ps-3">
-                    <h4>Jassa Rich</h4>
-                    <p class="text-muted mb-0">Coder</p>
-                    <ul class="social-links list-inline mb-0 mt-2">
-                      <li class="list-inline-item">
-                        <a
-                          href="javascript:void(0)"
-                          data-bs-toggle="tooltip"
-                          data-placement="top"
-                          title=""
-                          data-bs-original-title="Nathan's Facebook"
-                          aria-label="Nathan's Facebook"
-                          ><i class="fab fa-facebook"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="javascript:void(0)"
-                          data-bs-toggle="tooltip"
-                          data-placement="top"
-                          title=""
-                          data-bs-original-title="@nathan_andrews"
-                          aria-label="@nathan_andrews"
-                          ><i class="fab fa-twitter"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="javascript:void(0)"
-                          data-bs-toggle="tooltip"
-                          data-placement="top"
-                          title=""
-                          data-bs-original-title="+420777555987"
-                          aria-label="+420777555987"
-                          ><i class="fa fa-phone"></i
-                        ></a>
-                      </li>
-                      <li class="list-inline-item">
-                        <a
-                          href="javascript:void(0)"
-                          data-bs-toggle="tooltip"
-                          data-placement="top"
-                          title=""
-                          data-bs-original-title="@nathan"
-                          aria-label="@nathan"
-                          ><i class="fab fa-skype"></i
-                        ></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
             </div>
             <form class="card mb-4">
@@ -112,7 +49,7 @@
                   <div class="col-auto d-flex align-items-center">
                     <img
                       class="avatar avatar-lg p-1"
-                      src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                      src="https://avatars.githubusercontent.com/u/102802976?v=4"
                       alt="Avatar"
                     />
                   </div>
@@ -124,7 +61,7 @@
                 <div class="mb-3">
                   <label class="form-label">Bio</label>
                   <textarea class="form-control" rows="8">
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea
+I believe that learning the piano can be a powerful experience that will enhance your life in many ways, and I enjoy helping my students learn some of the life lessons and critical skills that come along with mastering the ins and outs of the instrument. </textarea
                   >
                 </div>
                 <div class="mb-3">
@@ -161,52 +98,40 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <div class="flex-shrink-0">
                       <img
                         class="avatar avatar-lg p-1"
-                        src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                        src="https://avatars.githubusercontent.com/u/102802976?v=4"
                         alt="Jassa Rich"
                       />
                     </div>
                     <div class="flex-grow-1 ps-3">
                       <small class="float-right">10 mins ago</small>
-                      <h5 class="fw-bold">Jassa Rich</h5>
+                      <h5 class="fw-bold">Fawez Ferjaoui</h5>
                       <div class="text-muted text-sm">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        I'm looking for a teacher to help me in finishing Symphony steps from beginner to Master
                       </div>
                       <div class="d-flex mt-4">
                         <div class="flex-shrink-0">
                           <img
                             class="avatar avatar-md p-1"
-                            src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                            src="https://avatars.githubusercontent.com/u/100468775?v=4"
                             alt="Serenity Mitchelle"
                           />
                         </div>
                         <div class="flex-grow-1 ps-3 text-sm text-muted">
-                          <strong class="text-dark">Serenity Mitchelle: </strong
-                          >Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                          <strong class="text-dark">Moez Hamza: </strong
+                          >My teaching experience began in high school, teaching beginning piano lessons to a handful of young friends and neighbors in Boise, Idaho. Though I still teach many young friends and neighbors here in Boston, my approach and skill have come a long way since those early years! With a bachelors and masters degree in piano performance, two semesters of piano pedagogy courses during graduate school, over seventy-five students, active membership in the Music Teachers National Association, more than a dozen student recitals, and thousands of lessons taught, I am very experienced and continue to love being a piano teacher.
                         </div>
                       </div>
                       <div class="d-flex mt-4">
                         <div class="flex-shrink-0">
                           <img
                             class="avatar avatar-md p-1"
-                            src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                            src="https://avatars.githubusercontent.com/u/102802976?v=4"
                             alt="Tony O'Brian"
                           />
                         </div>
                         <div class="flex-grow-1 ps-3 text-sm text-muted">
-                          <strong class="text-dark">Tony O'Brian: </strong>Lorem
-                          Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                          <strong class="text-dark">Fawez Ferjaoui: </strong>
+                          I'm still learning many things about piano and i hope by the end of the month i finish the beginner level
                         </div>
                       </div>
                     </div>
@@ -217,19 +142,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <div class="flex-shrink-0">
                       <img
                         class="avatar avatar-lg p-1"
-                        src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                        src="https://avatars.githubusercontent.com/u/102802976?v=4"
                         alt="Jassa Rich"
                       />
                     </div>
                     <div class="flex-grow-1 ps-3">
                       <small class="float-right">12 mins ago</small>
-                      <h5 class="fw-bold">Jassa Rich</h5>
+                      <h5 class="fw-bold">Fawez Ferjaoui</h5>
                       <div class="text-muted text-sm">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                        I just finished the beginner level its so easy 
                       </div>
                     </div>
                   </div>
@@ -239,35 +160,27 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <div class="flex-shrink-0">
                       <img
                         class="avatar avatar-lg p-1"
-                        src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                        src="https://avatars.githubusercontent.com/u/102802976?v=4"
                         alt="Jassa Rich"
                       />
                     </div>
                     <div class="flex-grow-1 ps-3">
                       <small class="float-right">34 mins ago</small>
-                      <h5 class="fw-bold">Jassa Rich</h5>
+                      <h5 class="fw-bold">Fawez Ferjaoui</h5>
                       <div class="text-muted text-sm">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book.
+                      In the Beginner level There is some difficulty specielly in the second video can any one help me ? 
                       </div>
                       <div class="d-flex mt-4">
                         <div class="flex-shrink-0">
                           <img
                             class="avatar avatar-md p-1"
-                            src="https://therichpost.com/wp-content/uploads/2021/03/avatar2.png"
+                            src="https://avatars.githubusercontent.com/u/102801929?v=4"
                             alt="Javier Gregory"
                           />
                         </div>
                         <div class="flex-grow-1 ps-3 text-sm text-muted">
-                          <strong class="text-dark">Javier Gregory: </strong
-                          >Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the
-                          industry's standard dummy text ever since the 1500s,
-                          when an unknown printer took a galley of type and
-                          scrambled it to make a type specimen book.
+                          <strong class="text-dark">Oussama Fajraoui: </strong
+                          >Google is your best friend Noob -_- .
                         </div>
                       </div>
                     </div>
@@ -281,17 +194,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
               </div>
               <div class="card-body">
                 <div class="row">
-                  <div class="col-md-5">
-                    <div class="mb-4">
-                      <label class="form-label">Company</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Company"
-                        value="Jassa Rich"
-                      />
-                    </div>
-                  </div>
                   <div class="col-sm-6 col-md-3">
                     <div class="mb-4">
                       <label class="form-label">Username</label>
@@ -299,7 +201,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         class="form-control"
                         type="text"
                         placeholder="Username"
-                        value="Jassa"
                       />
                     </div>
                   </div>
@@ -315,73 +216,22 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <div class="mb-4">
-                      <label class="form-label">First Name</label>
+                      <label class="form-label">New password</label>
                       <input
                         class="form-control"
-                        type="text"
-                        placeholder="First name"
+                        type="password"
+                        placeholder="Password"
                       />
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-6">
                     <div class="mb-4">
-                      <label class="form-label">Last Name</label>
+                      <label class="form-label">Repeat Password</label>
                       <input
                         class="form-control"
-                        type="text"
-                        placeholder="Last Name"
+                        type="password"
+                        placeholder="Password"
                       />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-4">
-                      <label class="form-label">Address</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="Home Address"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-4">
-                    <div class="mb-4">
-                      <label class="form-label">City</label>
-                      <input
-                        class="form-control"
-                        type="text"
-                        placeholder="City"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="mb-4">
-                      <label class="form-label">ZIP</label>
-                      <input
-                        class="form-control"
-                        type="number"
-                        placeholder="ZIP"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <div class="mb-4">
-                      <label class="form-label">Country</label>
-                      <select class="form-control custom-select">
-                        <option value="">UK</option>
-                        <option value="">US</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="mb-0">
-                      <label class="form-label">About Me</label>
-                      <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="Here can be your description"
-                      >
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</textarea
-                      >
                     </div>
                   </div>
                 </div>
@@ -399,12 +249,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <footer class="footer bg-white shadow align-self-end py-3 px-xl-5 w-100">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6 text-center text-md-start fw-bold">
-            <p class="mb-2 mb-md-0 fw-bold">Your company © 2021</p>
-          </div>
           <div class="col-md-6 text-center text-md-end text-gray-400">
-            <p class="mb-0">Jassa</p>
-          </div>
+                <button class="btn btn-danger" type="submit">
+                  Log Out
+                </button>         
+         </div>
         </div>
       </div>
     </footer>
