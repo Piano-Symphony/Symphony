@@ -9,6 +9,7 @@ import About from '../views/AboutView.vue'
 import VideoBeginner from '../views/VideoBeginner.vue'
 import VideoIntermediate from '../views/VideoIntermediate.vue'
 import VideoMaster from '../views/VideoMaster.vue'
+import UserProfile from  '../views/UserProfile.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -63,7 +64,13 @@ const routes: Array<RouteRecordRaw> = [
     path: '/videomaster',
     name: 'videomaster',
     component: VideoMaster
+  },
+  {
+    path : '/profile',
+    name : 'profile',
+    component : UserProfile
   }
+
 ]
 
 const router = createRouter({

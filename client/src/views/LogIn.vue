@@ -17,7 +17,7 @@
         </div>
         <div class ="my-3">
             <button type="submit" class="btn btn-primary"
-            @click="navigateTo({name:'home'})">Login</button>
+            @click="navigateTo({name:'profile'})">Login</button>
         </div>
     </form>
 </div>
