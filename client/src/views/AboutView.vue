@@ -1,14 +1,9 @@
 <template>
-    <div class="container">
       <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="pt-3"> Symphony Studio </h2>
-        </div>
+             <img src="https://symfony.com/images/opengraph/symfony.png" />
       </div>
       <div class="row">
-
       </div>
-    </div>
 </template>
 
 <script lang="ts">
@@ -24,7 +19,7 @@ export default {};
     background-size: cover !important;
   }
   #background-div {
-    background: url("../assets/logo.png");
+    background: url("https://symfony.com/images/opengraph/symfony.png");
   }
   #heading {
     font-weight: 400;
