@@ -5,6 +5,7 @@ import bcrypt from "bcrypt"
 import jwt from 'jsonwebtoken'
 const SECRET_JWT_CODE = "psmR3Hu0ihHKfqZymo1m"
 import cors from 'cors';
+import { equal } from "assert";
 const Port = 3000
 
 const app = express()
@@ -108,6 +109,43 @@ app.get("/sheet/master",async (req:Request,res:Response,)=>{
   }
 })
 
+//getting one sheet 
+
+ app.get('/sheet/:id',async (req:Request,res:Response)=>{
+  try{
+    const sheetId = Number(req.params.id) as number
+  
+    const sheet = await prisma.sheet.findUnique(
+      {where:{
+        id:sheetId
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+ })
+
+ // search bar 
+
+ app.get("/:term", async (req:Request, res:Response)=>{
+   try {
+    console.log(req.params.term)
+    const sheet = await prisma.sheet.findMany({
+      where:{
+        name:{
+          contains: req.params.term
+        }
+      }
+    })
+    res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: error,
+    })
+  }
+ })
 
   // post singUp
 
