@@ -38,6 +38,9 @@
 import { Vue } from 'vue-class-component'
 import { sheetApi } from "../api/beginnerSheet";
 import Sheets from "../interface/sheet";
+import { videoApi } from "../api/videoById";
+
+
 export default class Sheet extends Vue {
   sheets: Sheets[] = [];
   async mounted(): Promise<void> {
@@ -45,6 +48,10 @@ export default class Sheet extends Vue {
   }
   download(link:any){
     window.open(link)
+  }
+  videos: Sheets[] = [];
+  async method(): Promise<void> {
+  this.videos = await videoApi.findUnique();
   }
 }
 </script>

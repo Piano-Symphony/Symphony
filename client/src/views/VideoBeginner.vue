@@ -26,10 +26,16 @@
 import { Vue } from 'vue-class-component'
 import { sheetApi } from "../api/beginnerSheet";
 import Sheets from "../interface/sheet";
+import { videoApi } from "../api/videoById";
+
 export default class Sheet extends Vue {
   sheets: Sheets[] = [];
   async mounted(): Promise<void> {
    this.sheets = await sheetApi.findMany();
+  }
+    videos: Sheets[] = [];
+  async method(): Promise<void> {
+    this.videos = await videoApi.findUnique();
   }
 }
 </script>
