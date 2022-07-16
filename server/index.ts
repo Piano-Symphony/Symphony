@@ -135,7 +135,7 @@ app.get("/sheet/master",async (req:Request,res:Response,)=>{
     const sheet = await prisma.sheet.findMany({
       where:{
         name:{
-          in: req.params.term
+          contains: req.params.term
         }
       }
     })
