@@ -21,10 +21,10 @@ Welcome to Our Application
 ## Requirements:
 
 - Node.js
-- express
 - Vue.js
 - TypeScript
-- etc...
+- PostgreSQL
+- etc..
 
 ## Installing Dependencies:
 Install the dependencies in client folder and server folder:
