@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6 text-center text-md-start fw-bold">
-            <p class="mb-2 mb-md-0 fw-bold">Symphony Profile</p>
+            <p class="mb-2 mb-md-0 fw-bold">Welcome To your Profile Page</p>
           </div>
           <div class="col-md-6 text-center text-md-end text-gray-400">
             <p class="mb-0">Fawez</p>
@@ -34,7 +34,12 @@
                   alt="Jassa Rich"
                 />
                 <h3 class="mb-3">Fawez Ferjaoui</h3>
-                <p class="mb-4">Full Stack Web Developer</p>
+                <h4>Star Rating</h4>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span><br>
                 <button class="btn btn-outline-dark btn-sm">
                   <span class="fab fa-twitter"></span> Follow
                 </button>
@@ -69,7 +74,7 @@ I believe that learning the piano can be a powerful experience that will enhance
                   <input class="form-control" placeholder="you@domain.com" />
                 </div>
                 <label class="form-label">Password</label>
-                <input class="form-control" type="password" value="password" />
+                <input class="form-control" type="password" placeholder="Password"/>
               </div>
               <div class="card-footer text-end">
                 <button class="btn btn-primary">Save</button>
@@ -386,5 +391,8 @@ svg {
   height: 9rem;
   background-position: center center;
   background-size: cover;
+}
+.checked {
+  color: orange;
 }
 </style>
