@@ -12,12 +12,20 @@ datasource db {
 model User {
   id    Int     @id @default(autoincrement())
   email String  @unique
-userName String ?
+  userName String ?
+  level String?
   img   String  @unique
   role  Role    @default(User)
  
 }
 
+model singUp {
+    id    Int     @id @default(autoincrement())
+    email String  @unique
+    userName String ?
+    password String ?
+    img String ?
+}
 
 
 //
