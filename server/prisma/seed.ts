@@ -8,8 +8,7 @@ async function run() {
     update: {},
     create: {
       email: "user@example.com",
-      firstName: "firstName",
-      lastName:"lastName",
+      userName:'fawez ferjaoui',
       img:"img",
     },
   });
