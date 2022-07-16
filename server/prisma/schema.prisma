@@ -27,9 +27,24 @@ model singUp {
     img String ?
 }
 
+model Sheet {
+  id  Int @id @default(autoincrement())
+  img String @unique 
+  name String?
+  videoURL String?
+  fav Boolean?
+  comments Comment[]
+  level String?  
+  pdf String? 
+}
 
+model Comment {
+  id  Int @id @default(autoincrement())
+  content String?
+  sheet Sheet? @relation(fields: [sheetId], references: [id]) 
+  sheetId Int?
+}
 //
 enum Role {
   User
-
 }

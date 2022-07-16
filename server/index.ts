@@ -1,10 +1,11 @@
 import "dotenv/config";
-import express from "express";
+import express, {Request, Response}from "express";
 import {PrismaClient} from "@prisma/client"
 import bcrypt from "bcrypt"
 import jwt from 'jsonwebtoken'
-const Port= 3000
 const SECRET_JWT_CODE = "psmR3Hu0ihHKfqZymo1m"
+import cors from 'cors';
+const Port = 3000
 
 const app = express()
 
@@ -12,11 +13,12 @@ const app = express()
 const prisma = new PrismaClient();
 
 app.use(express.json());
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 
 
-// get user
-app.get("/users", async (req, res) => {
+// get user 
+app.get("/users", async (req:Request, res:Response) => {
     try {
       const user = await prisma.user.findMany()
   
@@ -27,9 +29,9 @@ app.get("/users", async (req, res) => {
       })
     }
   })
-//post user
-  app.post("/users", async (req, res) => {
-    try {
+
+  app.post("/users", async (req:Request, res:Response) => {
+    try {  
       const user= await prisma.user.create({
         data: {
             email: req.body.email,
@@ -37,7 +39,7 @@ app.get("/users", async (req, res) => {
             img: req.body.img,
         },
       })
-  
+      
       res.json(user)
     } catch (error: any) {
       console.log(error.message)
@@ -46,6 +48,65 @@ app.get("/users", async (req, res) => {
       })
     }
   })
+
+app.get("/sheet",async (req:Request, res:Response)=>{
+  try {
+    const sheet =  await prisma.sheet.findMany()
+    res.json(sheet)
+  } catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/beginner",async (req:Request,res:Response)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Beginner"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/intermediate",async (req:Request,res:Response)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Intermediate"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
+
+app.get("/sheet/master",async (req:Request,res:Response,)=>{
+  try{
+    const sheet = await prisma.sheet.findMany(
+      {where:{
+        level:{
+          equals:"Master"
+        }
+      }})
+      res.json(sheet)
+  }catch(error:any){
+    res.status(500).json({
+      message: "Something went wrong",
+    })
+  }
+})
 
 
   // post singUp
@@ -73,5 +134,5 @@ app.get("/users", async (req, res) => {
 
 
 app.listen(3000, () => {
-    console.log("App listening on port 3000 littel pajaro");
+    console.log("App listening on port 3000 little pajaro");
   });

@@ -5,15 +5,13 @@
     <div class="col-md-12">
       <div>
    <router-view></router-view>
-
 </div>
-
     </div>
   </div>
 </div>
 
 </template>
-<script>
+<script lang="ts">
 
 import TheNavigation from './components/TheNavigation.vue'
 
@@ -23,7 +21,6 @@ export default {
     TheNavigation
   },
 }
-
 </script>
 <style>
 </style>
