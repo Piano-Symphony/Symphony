@@ -50,24 +50,24 @@ app.get("/users", async (req, res) => {
 
   // post singUp
 
-  app.post('/login', async (req, res) => {
-    try {
-      console.log(req.cookies, req.get('origin'));
-      const { email, password } = req.body;
-      const users = await singUp.query('SELECT * FROM users WHERE user_email = $1', [email]);
-      if (users.rows.length === 0) return res.status(401).json({error:"Email is incorrect"});
-      //PASSWORD CHECK
-      const validPassword = await bcrypt.compare(password, users.rows[0].user_password);
-      if (!validPassword) return res.status(401).json({error: "Incorrect password"});
-      //JWT
-      let tokens = jwt(users.rows[0]);//Gets access and refresh tokens
-      res.cookie('refresh_token', tokens.refreshToken, {...(process.env.COOKIE_DOMAIN && {domain: process.env.COOKIE_DOMAIN}) , httpOnly: true,sameSite: 'none', secure: true});
-      res.json(tokens);
-    } catch (error) {
-      res.status(401).json({error: error.message});
-    }
+  // app.post('/login', async (req, res) => {
+  //   try {
+  //     console.log(req.cookies, req.get('origin'));
+  //     const { email, password } = req.body;
+  //     const users = await singUp.query('SELECT * FROM users WHERE user_email = $1', [email]);
+  //     if (users.rows.length === 0) return res.status(401).json({error:"Email is incorrect"});
+  //     //PASSWORD CHECK
+  //     const validPassword = await bcrypt.compare(password, users.rows[0].user_password);
+  //     if (!validPassword) return res.status(401).json({error: "Incorrect password"});
+  //     //JWT
+  //     let tokens = jwt(users.rows[0]);//Gets access and refresh tokens
+  //     res.cookie('refresh_token', tokens.refreshToken, {...(process.env.COOKIE_DOMAIN && {domain: process.env.COOKIE_DOMAIN}) , httpOnly: true,sameSite: 'none', secure: true});
+  //     res.json(tokens);
+  //   } catch (error) {
+  //     res.status(401).json({error: error.message});
+  //   }
   
-  });
+  // });
 
 
 
