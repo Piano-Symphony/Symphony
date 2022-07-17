@@ -14,7 +14,7 @@
       <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" v-model="search">
       <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
 
@@ -30,7 +30,22 @@
 
 <script>
 
-export default {}
+import { searchApi } from '../api/search';
+import Sheets from "../interface/sheet";
+
+
+export default {
+  data() {
+    return {
+      search: ''
+    }
+  },
+  search: {
+    filteredSheets () {
+      return this.sheet.filter(s => s.name.toLowerCase().includes(this.search.toLowerCase()))
+    }
+  }
+}
 </script>
 
 <style scoped>
