@@ -2,8 +2,6 @@
       <div class="row">
              <img src="https://symfony.com/images/opengraph/symfony.png" />
       </div>
-      <div class="row">
-      </div>
 </template>
 
 <script lang="ts">
