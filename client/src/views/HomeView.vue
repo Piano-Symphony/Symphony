@@ -40,3 +40,18 @@ export default class Sheet extends Vue {
   }
 }
 </script>
+
+<style>
+  .page-holder {
+    min-height: 100vh;
+  }
+  .bg-cover{
+    background-size: cover !important;
+  }
+  #background-div {
+    background: url("https://symfony.com/images/opengraph/symfony.png");
+  }
+  #heading {
+    font-weight: 400;
+  }
+</style>

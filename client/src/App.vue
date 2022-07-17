@@ -1,5 +1,6 @@
 <template>
     <TheNavigation />
+
    <router-view></router-view>
 
 </template>
@@ -14,4 +15,5 @@ export default {
   },
 }
 </script>
+
 
